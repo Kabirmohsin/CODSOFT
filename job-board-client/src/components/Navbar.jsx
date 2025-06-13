@@ -12,7 +12,6 @@ function Navbar() {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/jobs">Job Listings</Link></li>
         <li><Link to="/candidate">Candidate Dashboard</Link></li>
-        <li><Link to="#">Salary Guide</Link></li>
         <li><Link to="/employer">Employers / Post Job</Link></li> {/* ✅ Added Employer Dashboard link */}
       </ul>
       <div className="navbar-auth">
