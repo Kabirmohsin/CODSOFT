@@ -1,0 +1,225 @@
+.job-listings-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: lightblue;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.job-listings-page h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.job-listings-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-item {
+  background-color: #f8faff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 6px 15px rgba(0, 119, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.job-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 119, 255, 0.3);
+}
+
+.job-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.job-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0077ff;
+}
+
+.job-company {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #004aad;
+}
+
+.job-location {
+  font-size: 1rem;
+  color: #555;
+}
+
+.job-details {
+  margin-top: 8px;
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.job-type {
+  background-color: #e1f0ff;
+  color: #0077ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.job-experience,
+.job-openings {
+  font-weight: 500;
+}
+
+.job-description {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+}
+
+.apply-btn {
+  margin-top: 12px;
+  padding: 10px 22px;
+  background-color: #0077ff;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+  background-color: #005fcc;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0077ff;
+}
+
+.apply-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 15px;
+}
+
+.apply-form input[type="text"],
+.apply-form input[type="email"],
+.apply-form input[type="tel"],
+.apply-form input[type="file"],
+.apply-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.8px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.apply-form input[type="text"]:focus,
+.apply-form input[type="email"]:focus,
+.apply-form input[type="tel"]:focus,
+.apply-form input[type="file"]:focus,
+.apply-form textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.apply-form textarea {
+  resize: vertical;
+}
+
+.form-error {
+  color: #cc0000;
+  font-weight: 600;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.submit-btn,
+.cancel-btn {
+  cursor: pointer;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 25px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn {
+  background-color: #0077ff;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #005fcc;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: #444;
+}
+
+.cancel-btn:hover {
+  background-color: #999;
+}

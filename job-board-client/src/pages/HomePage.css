@@ -1,0 +1,175 @@
+/* Basic page container */
+.homepage-container {
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0073b1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signin-btn {
+  background: none;
+  border: none;
+  color: #0073b1;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* Search section */
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.search-section input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.find-jobs-btn {
+  padding: 10px 20px;
+  background-color: #0073b1;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hero section */
+.hero-section {
+ background: linear-gradient(to bottom right, #f0f9ff, #1499ab); /* light blue gradient */
+  padding: 60px 20px;
+  text-align: center;
+  width: 100vw;           /* full viewport width */
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;    /* removes any center constraint */
+}
+
+.hero-img {
+ width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.cta-button {
+   background-color: #0073b1;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.secondary-links {
+  font-size: 14px;
+  color: #555;
+}
+
+.secondary-links a {
+  color: #0073b1;
+  text-decoration: none;
+}
+
+.hero-img-container {
+  background-color: lightblue;  /* light, subtle blue-gray */
+  display: inline-block;      /* shrinkwrap to image size */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  margin-bottom: 20px;        /* space below container */
+}
+
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 25px 30px;
+  max-width: 450px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+/* Auth Buttons */
+.auth-button {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.auth-button.google {
+  background-color: #4285F4;
+}
+
+.auth-button.apple {
+  background-color: #000000;
+}
+
+/* Close Button */
+.modal-close {
+  margin-top: 15px;
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+}

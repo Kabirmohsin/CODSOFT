@@ -1,0 +1,152 @@
+.candidate-dashboard { 
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: pink;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.4rem;
+  color: #2c3e50;
+}
+
+.dashboard-header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background: white;
+  flex: 1 1 280px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #34495e;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status {
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: white;
+}
+
+.status.applied {
+  background-color: #3498db;
+}
+
+.status.review {
+  background-color: #f39c12;
+}
+
+.status.rejected {
+  background-color: #e74c3c;
+}
+
+.progress-bar {
+  background-color: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 15px;
+  margin: 10px 0 5px;
+}
+
+.progress {
+  background-color: #3498db;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Editable CandidateDashboard additions */
+
+.remove-btn {
+  margin-left: 10px;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.add-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #2980b9;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
