@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="quiz-bg">
+  <div class="quiz-container">
+    <h2 class="main-title">🎉 Quiz Completed!</h2>
+    <p id="resultText"></p>
+    <a href="index.html" class="next-btn">🏠 Back to Home</a>
+  </div>
+  <script>
+    const score = localStorage.getItem("quizScore") || 0;
+    const total = localStorage.getItem("quizTotal") || 0;
+    document.getElementById("resultText").textContent = `You scored ${score} out of ${total}`;
+  </script>
+</body>
+</html>
